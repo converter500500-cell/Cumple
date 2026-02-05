@@ -35,9 +35,25 @@
       20%  { opacity: 1; }
       100% { opacity: 0; transform: translate(-50%, -120%); }
     }
+
+
+    .dog-gif {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 220px;        /* ajusta tamaño */
+    z-index: 10;         /* encima del canvas */
+    pointer-events: none; /* no bloquea clicks */
+
+    
+  }
   </style>
 </head>
+
 <body>
+
+  <!-- Imagen -->
+  <img src="perro.gif" class="dog-gif" alt="perrito feliz">
 
   <!-- Three.js -->
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
