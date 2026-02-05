@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>✨ Para Ti ✨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #050b1e;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    /* Mensaje flotante */
+    .message {
+      position: absolute;
+      color: white;
+      font-size: 2rem;
+      font-weight: 600;
+      text-shadow: 0 0 15px rgba(255,255,255,0.8);
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      animation: floatUp 4s ease forwards;
+    }
+
+    @keyframes floatUp {
+      0%   { opacity: 0; transform: translate(-50%, -30%); }
+      20%  { opacity: 1; }
+      100% { opacity: 0; transform: translate(-50%, -120%); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Three.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+
+  <!-- Lógica -->
+  <script src="main.js"></script>
+
+</body>
+</html>
